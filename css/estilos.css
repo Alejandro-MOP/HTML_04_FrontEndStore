@@ -1,0 +1,175 @@
+    html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+        /* 1 rem =10px*/
+        height: 100%;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    body {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+49,a849a3+99 */
+        background: #e570e7;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #e570e7 0%, #c85ec7 49%, #a849a3 99%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #e570e7 0%, #c85ec7 49%, #a849a3 99%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #e570e7 0%, #c85ec7 49%, #a849a3 99%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3', GradientType=0);
+        /* IE6-9 */
+        height: 100%;
+        background-attachment: fixed;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    /*************************************************** GLOBALES ************************************************************/
+    
+    .contenedor {
+        max-width: 120rem;
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'PT Sans', sans-serif;
+    }
+    
+    h1 {
+        font-size: 4.8rem;
+    }
+    
+    h2 {
+        font-size: 4rem;
+        line-height: 1.2;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    h3 {
+        font-size: 3.2rem;
+    }
+    
+    h4 {
+        font-size: 2.8rem;
+    }
+    
+    img {
+        max-width: 100%;
+        /*border-radius: 5rem;*/
+    }
+    /*************************************************** UTILIDADES ****************************************************/
+    
+    .centrar-texto {
+        text-align: center;
+    }
+    
+    .no-margin {
+        margin: 0;
+    }
+    /*************************************************** HEADER ****************************************************/
+    
+    header {
+        text-align: center;
+        padding: 4rem 0;
+    }
+    
+    .hero {
+        margin-bottom: 4rem;
+    }
+    
+    .hero img {
+        display: flex;
+    }
+    /*************************************************** PRODUCTOS ****************************************************/
+    
+    .lista-productos {
+        margin-top: 2rem;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .lista-productos li {
+        float: left;
+        width: 50%;
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    .lista-productos li:nth-child(2n+1) {
+        clear: both;
+    }
+    
+    @media (min-width: 768px) {
+        .lista-productos li {
+            width: 33.3%;
+        }
+        .lista-productos li:nth-child(2n+1) {
+            clear: unset;
+        }
+        .lista-productos li:nth-child(3n+1) {
+            clear: both;
+        }
+    }
+    
+    .lista-productos li img {
+        border: 1rem solid rgba(128, 1, 195, .45);
+        transition: border-color .3s ease-in-out;
+    }
+    
+    .lista-productos li img:hover {
+        border: 1rem solid rgba(128, 1, 195, 2);
+    }
+    
+    .lista-productos li P {
+        font-size: 2.8rem;
+        font-weight: bold;
+        margin: 1rem 0 0 0;
+    }
+    
+    span.precio {
+        color: yellow;
+        font-size: 4rem;
+    }
+    
+    .boton {
+        background-color: #ebbc00;
+        padding: 1rem 4rem;
+        margin-top: 1rem;
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 2.3rem;
+        color: #8001c3;
+        transition: backgroud-color .3s ease-in-out;
+    }
+    
+    .boton:hover {
+        background-color: yellow;
+    }
+    /*************************************************** FOOTER ****************************************************/
+    
+    footer {
+        margin-top: 5rem;
+    }
+    
+    .site-footer p {
+        padding: 10 rem;
+        margin-top: 5rem;
+        text-align: center;
+        border-bottom: 5rem;
+        font-size: 2rem;
+    }
+    
+    .site-footer span {
+        font-weight: 700;
+    }
